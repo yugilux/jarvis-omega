@@ -1,35 +1,62 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#050b14"><title>J.A.R.V.I.S. OMEGA</title>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050b12">
+<meta name="description" content="Painel pessoal JARVIS OMEGA">
+<link rel="manifest" href="manifest.webmanifest">
+<title>J.A.R.V.I.S. — OMEGA</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 20%,#10283a,#050b14 60%);color:#d9faff;font-family:Arial,sans-serif;min-height:100vh}
-main{max-width:650px;margin:auto;padding:24px 18px 40px}.top{display:flex;justify-content:space-between;align-items:center;color:#69eaff;font-size:12px;letter-spacing:2px}
-h1{text-align:center;font-size:29px;letter-spacing:4px;margin:28px 0 4px;color:#e8fcff}.sub{text-align:center;color:#72b9ca;font-size:11px;letter-spacing:3px}
-.core{width:170px;height:170px;border:1px solid #43dff7;border-radius:50%;margin:28px auto;display:grid;place-items:center;box-shadow:0 0 28px #16b9dc55,inset 0 0 25px #16b9dc33;position:relative}
-.core:before,.core:after{content:"";position:absolute;border:1px solid #1d8da8;border-radius:50%;inset:12px}.core:after{inset:27px;border-style:dashed}
-.core span{font-size:39px;color:#72efff;text-shadow:0 0 18px #27dfff}
-.status{text-align:center;color:#7ce8f5;font-size:12px;margin-bottom:22px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{border:1px solid #1d5267;background:#0a1b29;border-radius:12px;padding:16px 12px;color:#d9faff;text-align:left;min-height:86px}
-.tile b{display:block;color:#6ceaff;font-size:13px;margin-bottom:7px}.tile small{color:#8caeba;font-size:11px}
-button{font:inherit;cursor:pointer}.mainbtn{width:100%;border:1px solid #4be5ff;background:#0b3042;color:#c9faff;border-radius:12px;padding:16px;margin-top:18px;font-weight:bold;letter-spacing:1px}
-.note{color:#829da8;font-size:11px;line-height:1.5;text-align:center;margin-top:20px}
-#clock{font-variant-numeric:tabular-nums}
-</style></head><body><main>
-<div class="top"><span>OMEGA SYSTEM</span><span id="clock">--:--:--</span></div>
-<h1>J.A.R.V.I.S.</h1><div class="sub">PROTOCOLO ÔMEGA</div>
-<div class="core"><span>✧</span></div>
-<div class="status">● SISTEMA LOCAL ATIVO<br><small>Painel pronto • sem sensores ou controle remoto</small></div>
+:root{color-scheme:dark;--bg:#050b12;--panel:#0b1722;--line:#16445a;--cyan:#4de7ff;--muted:#8aa7b5;--green:#7bffbf}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#102b3b 0%,var(--bg) 55%);color:#e9faff;font:15px system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+header{padding:22px 18px 12px;text-align:center}small,.muted{color:var(--muted)}h1{font-size:clamp(22px,6vw,32px);letter-spacing:.18em;margin:8px 0;color:var(--cyan)}.sub{letter-spacing:.16em;font-size:11px;color:var(--muted)}
+main{max-width:760px;margin:auto;padding:10px 14px 36px}.core{width:142px;height:142px;border:1px solid var(--cyan);border-radius:50%;margin:18px auto;display:grid;place-items:center;box-shadow:0 0 28px #1a9dbb55,inset 0 0 28px #1a9dbb33;position:relative}.core:before,.core:after{content:"";position:absolute;border:1px solid #2687a1;border-radius:50%;inset:10px}.core:after{inset:22px;border-style:dashed;animation:spin 18s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.core b{font-size:27px;color:var(--cyan);letter-spacing:.1em}
+.status{display:flex;justify-content:space-between;gap:8px;border:1px solid var(--line);background:#08131d;padding:12px;border-radius:12px;font-size:12px}.ok{color:var(--green)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}.card{background:linear-gradient(145deg,#0d1c29,#07111a);border:1px solid var(--line);border-radius:14px;padding:14px}.card h2{font-size:13px;letter-spacing:.12em;color:var(--cyan);margin:0 0 8px}.card p{font-size:12px;color:var(--muted);min-height:34px;line-height:1.45}
+button{width:100%;border:1px solid #23728a;border-radius:10px;padding:12px;background:#0d2938;color:#eaffff;font-weight:650;font-size:13px}button:active{transform:scale(.985);background:#154156}.wide{margin-top:10px}.section{margin-top:18px}.section h2{font-size:13px;letter-spacing:.14em;color:var(--cyan)}.note{font-size:12px;line-height:1.5;color:var(--muted);border-left:2px solid var(--cyan);padding:8px 12px;background:#091722;border-radius:0 8px 8px 0}.clock{font-variant-numeric:tabular-nums;color:var(--cyan)}footer{text-align:center;padding:20px;color:var(--muted);font-size:11px}
+@media(max-width:420px){.grid{grid-template-columns:1fr}.card p{min-height:0}}
+</style>
+</head>
+<body>
+<header>
+<div class="sub">INTERFACE PESSOAL • PROTOCOLO ÔMEGA</div>
+<h1>J.A.R.V.I.S.</h1>
+<div class="sub">COMMAND INTERFACE</div>
+<div class="core"><b>Ω</b></div>
+<div class="status"><span><span class="ok">●</span> PAINEL ONLINE</span><span id="clock" class="clock">--:--:--</span><span>LOCAL • ANDROID</span></div>
+</header>
+<main>
 <div class="grid">
-<button class="tile" onclick="ask('Ative o modo Análise Ômega. Seja preciso, avalie riscos e apresente um plano.')"><b>01 / ANÁLISE</b><small>Raciocínio e planejamento</small></button>
-<button class="tile" onclick="ask('Ative o Modo Cientista. Explique com rigor, etapas e exemplos.')"><b>02 / CIÊNCIA</b><small>Explicações técnicas</small></button>
-<button class="tile" onclick="ask('Faça um diagnóstico lógico do problema que vou descrever. Não invente dados.')"><b>03 / DIAGNÓSTICO</b><small>Investigar problemas</small></button>
-<button class="tile" onclick="ask('Ative o Modo Executivo. Seja objetivo e priorize ações práticas.')"><b>04 / EXECUTIVO</b><small>Decisões e tarefas</small></button>
+<section class="card"><h2>01 / ANÁLISE ÔMEGA</h2><p>Estruture um problema, compare cenários e identifique riscos.</p><button data-prompt="Ative o modo JARVIS — PROTOCOLO ÔMEGA. Analise o seguinte problema de forma estratégica: ">Iniciar análise</button></section>
+<section class="card"><h2>02 / MODO CIENTISTA</h2><p>Explicações técnicas, hipóteses e verificação de evidências.</p><button data-prompt="Ative o Modo Cientista: explique com rigor, diferencie fatos de hipóteses e indique limites de certeza sobre: ">Iniciar investigação</button></section>
+<section class="card"><h2>03 / DIAGNÓSTICO</h2><p>Organize sintomas de um problema técnico e possíveis causas.</p><button data-prompt="Ative o Diagnóstico Ômega. Ajude-me a diagnosticar este problema passo a passo, começando pelas verificações mais seguras: ">Executar diagnóstico</button></section>
+<section class="card"><h2>04 / MODO EXECUTIVO</h2><p>Transforme um objetivo em etapas claras e priorizadas.</p><button data-prompt="Ative o Modo Executivo. Transforme meu objetivo em um plano prático, priorizado e realista: ">Montar plano</button></section>
 </div>
-<button class="mainbtn" onclick="openChat()">ABRIR CHATGPT</button>
-<div class="note">Este aplicativo é um painel de acesso. As respostas inteligentes acontecem no ChatGPT e dependem da sua conta e conexão com a internet. Não fica ouvindo em segundo plano nem controla outros aplicativos.</div>
+<div class="section">
+<h2>ACESSO RÁPIDO</h2>
+<button class="wide" id="openChat">Abrir ChatGPT</button>
+<button class="wide" id="install" hidden>Instalar painel no Android</button>
+</div>
+<div class="section">
+<h2>ESTADO DO SISTEMA</h2>
+<div class="note">Este painel funciona como central visual e lançador de comandos. Os botões copiam um comando e abrem o ChatGPT; cole o texto na conversa. O painel não monitora sensores, não controla outros aplicativos e não mantém escuta em segundo plano.</div>
+</div>
 </main>
+<footer>J.A.R.V.I.S. OMEGA • INTERFACE LOCAL • SEM TELEMETRIA</footer>
 <script>
-function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('pt-BR')}tick();setInterval(tick,1000);
-function openChat(){location.href='https://chatgpt.com/'}
-function ask(prompt){try{navigator.clipboard.writeText(prompt)}catch(e){}; alert('Comando preparado. O ChatGPT será aberto; cole o comando na conversa.');openChat()}
-</script></body></html>
+const clock=document.getElementById('clock');
+function tick(){clock.textContent=new Intl.DateTimeFormat('pt-BR',{hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(new Date())}
+tick();setInterval(tick,1000);
+async function copyPrompt(prompt){
+ try{await navigator.clipboard.writeText(prompt);alert('Comando copiado. O ChatGPT será aberto; cole o comando na conversa.')}
+ catch(e){window.prompt('Copie este comando:',prompt)}
+ window.open('https://chatgpt.com/','_blank','noopener');
+}
+document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>copyPrompt(b.dataset.prompt)));
+document.getElementById('openChat').addEventListener('click',()=>window.open('https://chatgpt.com/','_blank','noopener'));
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('install').hidden=false});
+document.getElementById('install').addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null});
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>

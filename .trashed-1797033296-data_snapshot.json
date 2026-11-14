@@ -1,0 +1,410 @@
+{
+  "snapshot_info": {
+    "project_name": "ORA-CENTRAL",
+    "project_ref": "qhabwmiirbgxhxkgymgw",
+    "region": "sa-east-1",
+    "organization_plan": "free",
+    "project_status_at_export": "ACTIVE_HEALTHY",
+    "export_date": "2026-11-11",
+    "note": "Snapshot of accessible application data; timestamps/IDs preserved where retrieved. No passwords, API secrets, auth sessions, or private access-control rows included."
+  },
+  "tables": {
+    "ora_departments": [
+      {
+        "id": "DEP-01",
+        "name": "Estratégia e Operações",
+        "director": "Sung Jin-Woo",
+        "mandate": "Planejamento estratégico, metas, projetos, execução, prazos e acompanhamento.",
+        "status": "operational"
+      },
+      {
+        "id": "DEP-02",
+        "name": "Administração e Desenvolvimento Institucional",
+        "director": "Hanako",
+        "mandate": "Documentos, reuniões, atas, arquivo, calendário, padronização, Banco de Ideias e Gestão do Conhecimento.",
+        "status": "operational"
+      },
+      {
+        "id": "DEP-03",
+        "name": "Inteligência e Análise",
+        "director": "Patrick Jane",
+        "mandate": "Análise de propostas e informações, identificação de contradições, fatos, hipóteses, opções, riscos e consequências.",
+        "status": "operational"
+      },
+      {
+        "id": "DEP-04",
+        "name": "Integridade e Mediação",
+        "director": "Thorfinn",
+        "mandate": "Código de Conduta, mediação, ética, conflitos e ocorrências.",
+        "status": "operational"
+      },
+      {
+        "id": "DEP-05",
+        "name": "Auditoria e Controle de Qualidade",
+        "director": "Noah",
+        "mandate": "Auditorias, inspeções, qualidade, indicadores e acompanhamento de ações corretivas.",
+        "status": "operational"
+      },
+      {
+        "id": "DEP-06",
+        "name": "Logística e Gestão de Recursos",
+        "director": "Kaleb",
+        "mandate": "Inventário, recursos, materiais, suporte e necessidades.",
+        "status": "operational"
+      },
+      {
+        "id": "DEP-07",
+        "name": "Relações Institucionais e Coesão",
+        "director": "Conselheira da Amizade",
+        "mandate": "Comunicação entre departamentos, cooperação, integração e participação equilibrada.",
+        "status": "operational"
+      }
+    ],
+    "ora_members": [
+      {
+        "id": "0edd46b8-5558-4e54-917d-94ba847c9db2",
+        "name": "Yugi",
+        "role_title": "Fundador e Diretor-Geral",
+        "member_type": "founder",
+        "department_id": null,
+        "is_active": true
+      },
+      {
+        "id": "5bcc0f95-5dd4-4877-b37f-7b95e51eaeb0",
+        "name": "Hanako",
+        "role_title": "Diretora de Administração e Desenvolvimento Institucional",
+        "member_type": "council",
+        "department_id": "DEP-02",
+        "is_active": true
+      },
+      {
+        "id": "aa876beb-5a38-4c57-8ce9-635b00810c12",
+        "name": "Sung Jin-Woo",
+        "role_title": "Diretor de Estratégia e Operações",
+        "member_type": "council",
+        "department_id": "DEP-01",
+        "is_active": true
+      },
+      {
+        "id": "9c2df5a9-13c5-4559-b031-6d43b36ffdb9",
+        "name": "Patrick Jane",
+        "role_title": "Diretor de Inteligência e Análise",
+        "member_type": "council",
+        "department_id": "DEP-03",
+        "is_active": true
+      },
+      {
+        "id": "d2c8c35d-f777-4e4e-b2b3-d0dc05e35e98",
+        "name": "Thorfinn",
+        "role_title": "Diretor de Integridade e Mediação",
+        "member_type": "council",
+        "department_id": "DEP-04",
+        "is_active": true
+      },
+      {
+        "id": "db45d63f-3470-4925-8d19-8b159b21ed7d",
+        "name": "Noah",
+        "role_title": "Diretor de Auditoria e Controle de Qualidade",
+        "member_type": "council",
+        "department_id": "DEP-05",
+        "is_active": true
+      },
+      {
+        "id": "b26feae8-3e98-47d4-b4e7-a0aa7be2083f",
+        "name": "Kaleb",
+        "role_title": "Diretor de Logística e Gestão de Recursos",
+        "member_type": "council",
+        "department_id": "DEP-06",
+        "is_active": true
+      },
+      {
+        "id": "7e8235b6-1400-4426-ae89-931f0d481181",
+        "name": "Conselheira da Amizade",
+        "role_title": "Diretora de Relações Institucionais e Coesão",
+        "member_type": "council",
+        "department_id": "DEP-07",
+        "is_active": true
+      }
+    ],
+    "ora_projects": [
+      {
+        "id": "204700f8-dfaa-4533-9396-5c914e5913f6",
+        "code": "ORA-PROJ-2026-001",
+        "title": "Sistema de Metas e Progresso Institucional",
+        "description": "Definir metas, acompanhar evolução e registrar resultados.",
+        "responsible_department_id": "DEP-01",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "a5e7e764-911c-4f26-9990-a838915541f2",
+        "code": "ORA-PROJ-2026-002",
+        "title": "Central de Análise e Decisão",
+        "description": "Padronizar a análise de propostas e o fluxo decisório.",
+        "responsible_department_id": "DEP-03",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "8c1e938d-3a55-4288-b282-645740edbcbd",
+        "code": "ORA-PROJ-2026-003",
+        "title": "Código de Conduta Institucional",
+        "description": "Estabelecer princípios de conduta, ética e convivência.",
+        "responsible_department_id": "DEP-04",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "d6dcadcd-9788-4d0c-99fc-8cd121f31450",
+        "code": "ORA-PROJ-2026-004",
+        "title": "Índice de Saúde Institucional",
+        "description": "Acompanhar indicadores de funcionamento e qualidade.",
+        "responsible_department_id": "DEP-05",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "91737147-28dd-4fe0-a435-76ff51308cf5",
+        "code": "ORA-PROJ-2026-005",
+        "title": "Inventário Institucional",
+        "description": "Organizar recursos, materiais e necessidades.",
+        "responsible_department_id": "DEP-06",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "12dc952c-c1d3-4483-8d2a-eb6d54653fa0",
+        "code": "ORA-PROJ-2026-006",
+        "title": "Programa de Integração e Cooperação",
+        "description": "Fortalecer a comunicação e a colaboração entre departamentos.",
+        "responsible_department_id": "DEP-07",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "a7f22b0f-1412-4d61-a08a-26e4c2553598",
+        "code": "ORA-PROJ-2026-007",
+        "title": "Arquivo Histórico e Memória Institucional",
+        "description": "Preservar documentos, decisões e histórico da O.R.A.",
+        "responsible_department_id": "DEP-02",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "1875b6fb-067b-4cbf-ba39-82386b9b66fb",
+        "code": "ORA-PROJ-2026-008",
+        "title": "Conselho de Revisão Anual",
+        "description": "Realizar revisão institucional anual pelo Conselho Superior.",
+        "responsible_department_id": null,
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "490fb9ba-346f-4bab-9c47-7579684e09a9",
+        "code": "ORA-PROJ-2026-009",
+        "title": "Banco de Ideias Institucional",
+        "description": "Registrar e organizar propostas de desenvolvimento.",
+        "responsible_department_id": "DEP-02",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "0f769ed5-e2fe-45c9-aa90-58f4549da0ff",
+        "code": "ORA-PROJ-2026-010",
+        "title": "Protocolo de Continuidade",
+        "description": "Definir procedimentos de continuidade e preservação institucional.",
+        "responsible_department_id": "DEP-01",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      },
+      {
+        "id": "575a2af9-2d2c-4e98-833d-90a56ac222e5",
+        "code": "ORA-PROJ-2026-011",
+        "title": "Sistema de Gestão do Conhecimento (SGC)",
+        "description": "Organizar conhecimento institucional com apoio de análise e controle de qualidade.",
+        "responsible_department_id": "DEP-02",
+        "status": "approved",
+        "progress": 0,
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "target_date": null,
+        "metadata": {}
+      }
+    ],
+    "ora_meetings": [],
+    "ora_decisions": [],
+    "ora_records": [],
+    "ora_goals": [],
+    "ora_audits": [],
+    "ora_audit_findings": [],
+    "ora_corrective_actions": [],
+    "ora_inventory": [],
+    "ora_ideas": [],
+    "ora_knowledge_documents": [
+      {
+        "id": "c21519f0-4c60-476a-9721-e08cb0f37d22",
+        "code": "ORA-MAN-2026-001",
+        "title": "Manual de Auditoria v1",
+        "document_type": "manual",
+        "version": 1,
+        "status": "approved",
+        "approved_by": "Yugi",
+        "approved_at": "2026-11-04T00:17:40.963258+00:00",
+        "body": "Manual operacional DEP-05: auditorias ordinárias mensais e extraordinárias quando necessário; relatório padronizado; classificação dos achados em Conforme, Parcialmente conforme, Não conforme e Não aplicável; controle de ações corretivas com responsável, medida, prazo, evidência e validação; indicadores de conformidade, correções pendentes, atrasos, recorrência e qualidade dos registros. Regra de independência: Noah não pode auditar sozinho o próprio trabalho. O pacote foi aprovado para uso. Nenhuma inspeção oficial inicial foi registrada até a implantação deste banco."
+      },
+      {
+        "id": "8a0d044e-5395-4936-af11-fe7d4ab28c99",
+        "code": "ORA-MAN-2026-002",
+        "title": "Registro de Desenvolvimento — Treino de Conversação",
+        "document_type": "registro_de_aprendizado",
+        "version": 1,
+        "status": "draft",
+        "approved_by": null,
+        "approved_at": null,
+        "body": "Registro criado com autorização do fundador para testar a gravação de conhecimento no banco da O.R.A. Conteúdo não sensível e limitado ao treino desta conversa. Objetivo: praticar como iniciar e manter conversas naturais. Pontos fortes observados: responder com espontaneidade; compartilhar experiências pessoais antes de devolver perguntas; identificar interesses em comum; retomar detalhes mencionados anteriormente; sugerir atividades compartilhadas de forma leve; fazer perguntas abertas para manter o diálogo. Exemplos de temas usados no treino: escola e amigos, jogos (Fortnite e Minecraft) e gostos musicais (rap geek, forró e sertanejo). Pontos para continuar desenvolvendo: variar perguntas com comentários e histórias próprias; mudar de assunto com naturalidade; evitar transformar o diálogo em entrevista; não buscar uma resposta perfeita e respeitar o ritmo da outra pessoa. Avaliação desta sessão: desempenho geral estimado em 9,5/10, como feedback informal do exercício, não como medida objetiva. Status mantido como rascunho; nenhum conteúdo foi aprovado como norma ou decisão institucional."
+      },
+      {
+        "id": "ab343c0f-9730-47e2-bbc5-ec2f0984986c",
+        "code": "ORA-MAN-2026-003",
+        "title": "Registro de Preferências de Anime e Franquias",
+        "document_type": "registro_de_interesses",
+        "version": 1,
+        "status": "draft",
+        "approved_by": null,
+        "approved_at": null,
+        "body": "Registro inicial baseado nas preferências já compartilhadas pelo fundador. Favoritos e interesses conhecidos: Solo Leveling; Naruto; Dragon Ball; Pokémon. Observação: Pokémon é registrado como franquia de interesse, não afirmando que o usuário citou exclusivamente o anime. Este registro é inicial e pode ser ampliado quando novos títulos forem confirmados. Não representa uma lista completa de todos os animes já mencionados em conversas anteriores."
+      },
+      {
+        "id": "b42e571c-40af-4a60-b2cb-6cc06cdac27e",
+        "code": "ORA-MAN-2026-004",
+        "title": "Registro de Sistema — SHADOW MONARCH SYSTEM",
+        "document_type": "system_specification",
+        "version": 1,
+        "status": "draft",
+        "approved_by": null,
+        "approved_at": null,
+        "body": "REGISTRO DE SISTEMA — SHADOW MONARCH SYSTEM (MONARCH INTERFACE)\n\n1. IDENTIDADE E FINALIDADE\nNome: SHADOW MONARCH SYSTEM — MONARCH INTERFACE.\nÉ um painel pessoal de gamificação e acompanhamento de evolução, inspirado visualmente na estética de sistemas de progressão de fantasia/anime, especialmente no clima visual de Solo Leveling. O usuário utiliza a estrutura para organizar missões, acompanhar progresso, registrar conquistas e consultar recursos pessoais.\n\n2. IDENTIDADE VISUAL\nTema predominante: azul-escuro, com estética de interface de sistema/monarca. Elementos de interface incluem o estado “SISTEMA ONLINE” e a indicação “Ω EXPANSÃO”.\n\n3. MÓDULOS E ABAS PREVISTOS\n- Início\n- Missões\n- Status\n- LV & XP\n- Conselho\n- Registros\n- Secretos\n- Eco do Futuro\n- Inventário\n- Habilidades\n- Frases Diárias\n\n4. CONCEITOS DE USO\n- Missões: organizar objetivos e desafios.\n- Status: visão geral do estado/progresso.\n- LV & XP: representar evolução de forma gamificada.\n- Registros: guardar histórico e acontecimentos relevantes.\n- Inventário: reunir itens/recursos pessoais.\n- Habilidades: acompanhar competências em desenvolvimento.\n- Frases Diárias: exibir mensagens motivacionais.\n- Conselho: área de consulta/organização de orientações.\n- Secretos e Eco do Futuro: módulos especiais previstos no conceito da interface.\nOs detalhes internos de regras, fórmulas de XP, níveis, recompensas e automações não estão confirmados neste registro e não devem ser inventados.\n\n5. APLICAÇÃO AO CONTEXTO ATUAL\nA “Dungeon Escola” foi anunciada pelo usuário como uma forma lúdica de enquadrar desafios escolares. A classificação/dificuldade depende das missões escolares ativas e das missões pessoais do usuário. A ideia é distinguir:\n- Missões da Dungeon: atividades, trabalhos, provas e desafios escolares.\n- Missões pessoais: objetivos de desenvolvimento e evolução definidos pelo próprio usuário.\nEste registro não declara nenhuma missão individual como ativa ou concluída, pois a lista atual não foi recuperada.\n\n6. ESTADO TÉCNICO CONHECIDO — APENAS CONTEXTO\nHouve planejamento de uma interface local em HTML, com salvamento no navegador e opções de exportação/importação. A publicação como site acessível pela internet e a sincronização online/automática não foram confirmadas. Este documento registra as informações conceituais; não transfere código-fonte, arquivos HTML, ZIP, credenciais, chaves ou dados de acesso.\n\n7. LIMITAÇÕES E PRÓXIMAS ATUALIZAÇÕES\n- Não foi localizada uma lista confiável e atualizada de missões ativas.\n- Não estão confirmados os valores atuais de nível, XP, atributos ou inventário.\n- Não foram transferidos arquivos de implementação nem dados técnicos do site.\n- Atualizar este documento somente quando o usuário fornecer ou recuperar os dados faltantes.\n- Manter este documento como rascunho até revisão/aprovação do fundador.\n\nResumo: o SHADOW MONARCH SYSTEM é um painel pessoal de organização e evolução gamificada; sua estrutura conceitual e seus módulos foram registrados para referência na O.R.A."
+      }
+    ],
+    "ora_activity_log": [
+      {
+        "id": "f5712c30-5e44-445e-96e8-50b93721ab1b",
+        "event_type": "project_created",
+        "entity_type": "system",
+        "entity_id": null,
+        "description": "Projeto Supabase ORA-CENTRAL criado na região sa-east-1.",
+        "actor": "O.R.A. system",
+        "metadata": {
+          "status": "ACTIVE_HEALTHY"
+        },
+        "created_at": "2026-11-04T00:17:40.963258+00:00"
+      },
+      {
+        "id": "62c3e69a-1370-4690-8522-442e397d7503",
+        "event_type": "schema_installed",
+        "entity_type": "system",
+        "entity_id": null,
+        "description": "Estrutura inicial do banco institucional instalada; tabelas protegidas por RLS.",
+        "actor": "O.R.A. system",
+        "metadata": {
+          "tables": 14,
+          "migration": "ora_initial_institutional_schema"
+        },
+        "created_at": "2026-11-04T00:17:40.963258+00:00"
+      },
+      {
+        "id": "c616f126-f799-4c71-9490-edcfe6eedbe5",
+        "event_type": "institutional_seed",
+        "entity_type": "system",
+        "entity_id": null,
+        "description": "Departamentos, Conselho, 11 propostas aprovadas e Manual de Auditoria v1 registrados.",
+        "actor": "O.R.A. system",
+        "metadata": {
+          "departments": 7,
+          "council_members": 8,
+          "approved_proposals": 11
+        },
+        "created_at": "2026-11-04T00:17:40.963258+00:00"
+      },
+      {
+        "id": "e297bde1-9016-4099-a329-13d8005f256c",
+        "event_type": "insert",
+        "entity_type": "ora_knowledge_documents",
+        "entity_id": "8a0d044e-5395-4936-af11-fe7d4ab28c99",
+        "description": "Institutional record insert: 8a0d044e-5395-4936-af11-fe7d4ab28c99",
+        "actor": "database-system",
+        "metadata": {
+          "key": "8a0d044e-5395-4936-af11-fe7d4ab28c99",
+          "table": "ora_knowledge_documents"
+        },
+        "created_at": "2026-11-05T23:37:10.926981+00:00"
+      },
+      {
+        "id": "2042176b-903f-4674-ad96-d7c86f6cbc3c",
+        "event_type": "insert",
+        "entity_type": "ora_knowledge_documents",
+        "entity_id": "ab343c0f-9730-47e2-bbc5-ec2f0984986c",
+        "description": "Institutional record insert: ab343c0f-9730-47e2-bbc5-ec2f0984986c",
+        "actor": "database-system",
+        "metadata": {
+          "key": "ab343c0f-9730-47e2-bbc5-ec2f0984986c",
+          "table": "ora_knowledge_documents"
+        },
+        "created_at": "2026-11-05T23:47:05.919993+00:00"
+      },
+      {
+        "id": "f600d304-c769-450c-b26d-9676434003a0",
+        "event_type": "insert",
+        "entity_type": "ora_knowledge_documents",
+        "entity_id": "b42e571c-40af-4a60-b2cb-6cc06cdac27e",
+        "description": "Institutional record insert: b42e571c-40af-4a60-b2cb-6cc06cdac27e",
+        "actor": "database-system",
+        "metadata": {
+          "key": "b42e571c-40af-4a60-b2cb-6cc06cdac27e",
+          "table": "ora_knowledge_documents"
+        },
+        "created_at": "2026-11-09T08:47:03.340412+00:00"
+      }
+    ]
+  }
+}

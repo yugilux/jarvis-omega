@@ -1,0 +1,28 @@
+J.A.R.V.I.S. OMEGA — projeto Android gratuito
+
+O que este projeto entrega:
+- APK Android com painel local escuro estilo HUD.
+- Quatro botões que preparam comandos e abrem o ChatGPT.
+- Compatibilidade mínima Android 6.0 (API 23); pensado para Android 11.
+- Não usa API paga nem pede permissões especiais além de internet.
+
+IMPORTANTE:
+- Este ZIP contém o CÓDIGO-FONTE, não um APK pronto.
+- O APK será compilado gratuitamente pelo GitHub Actions na nuvem.
+- É necessário ter uma conta GitHub e internet. Não é necessário computador.
+- O app não é um assistente sempre ouvindo, não controla outros apps e não incorpora o modelo do ChatGPT.
+- O botão de comando abre o ChatGPT; se o texto não for colado automaticamente, copie/digite o comando manualmente. O Android/WebView pode limitar a área de transferência.
+
+COMO GERAR PELO CELULAR:
+1. No Chrome do Moto G20, entre em https://github.com e crie uma conta ou entre.
+2. Crie um repositório novo chamado jarvis-omega. Selecione Public para facilitar o uso do GitHub Actions gratuito e não coloque senhas ou dados pessoais no projeto.
+3. No repositório, use Add file > Upload files. Extraia este ZIP primeiro com o gerenciador de arquivos do celular e envie o CONTEÚDO da pasta (incluindo a pasta .github). Se o site não mostrar arquivos ocultos, crie manualmente o caminho .github/workflows/build-apk.yml e cole o conteúdo desse arquivo.
+4. Toque em Commit changes.
+5. Abra a aba Actions do repositório. Se necessário, confirme que deseja habilitar workflows.
+6. Abra “Build JARVIS OMEGA APK” e aguarde terminar com marca verde.
+7. Na execução concluída, baixe o artefato “JARVIS-OMEGA-APK”. Extraia o arquivo app-debug.apk.
+8. Abra o APK no celular. Se o Android bloquear, permita a instalação para o navegador/gerenciador de arquivos usado e prossiga. Só instale o APK que você mesmo gerou a partir deste projeto.
+
+Se a compilação falhar:
+- Abra a execução em Actions e veja o primeiro erro vermelho.
+- Não compartilhe tokens, senhas ou chaves de conta.
