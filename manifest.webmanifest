@@ -1,0 +1,10 @@
+{
+  "name": "J.A.R.V.I.S. OMEGA",
+  "short_name": "JARVIS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050b12",
+  "theme_color": "#050b12",
+  "description": "Painel pessoal JARVIS OMEGA",
+  "icons": []
+}

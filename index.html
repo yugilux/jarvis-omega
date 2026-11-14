@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050b14"><title>J.A.R.V.I.S. OMEGA</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 20%,#10283a,#050b14 60%);color:#d9faff;font-family:Arial,sans-serif;min-height:100vh}
+main{max-width:650px;margin:auto;padding:24px 18px 40px}.top{display:flex;justify-content:space-between;align-items:center;color:#69eaff;font-size:12px;letter-spacing:2px}
+h1{text-align:center;font-size:29px;letter-spacing:4px;margin:28px 0 4px;color:#e8fcff}.sub{text-align:center;color:#72b9ca;font-size:11px;letter-spacing:3px}
+.core{width:170px;height:170px;border:1px solid #43dff7;border-radius:50%;margin:28px auto;display:grid;place-items:center;box-shadow:0 0 28px #16b9dc55,inset 0 0 25px #16b9dc33;position:relative}
+.core:before,.core:after{content:"";position:absolute;border:1px solid #1d8da8;border-radius:50%;inset:12px}.core:after{inset:27px;border-style:dashed}
+.core span{font-size:39px;color:#72efff;text-shadow:0 0 18px #27dfff}
+.status{text-align:center;color:#7ce8f5;font-size:12px;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{border:1px solid #1d5267;background:#0a1b29;border-radius:12px;padding:16px 12px;color:#d9faff;text-align:left;min-height:86px}
+.tile b{display:block;color:#6ceaff;font-size:13px;margin-bottom:7px}.tile small{color:#8caeba;font-size:11px}
+button{font:inherit;cursor:pointer}.mainbtn{width:100%;border:1px solid #4be5ff;background:#0b3042;color:#c9faff;border-radius:12px;padding:16px;margin-top:18px;font-weight:bold;letter-spacing:1px}
+.note{color:#829da8;font-size:11px;line-height:1.5;text-align:center;margin-top:20px}
+#clock{font-variant-numeric:tabular-nums}
+</style></head><body><main>
+<div class="top"><span>OMEGA SYSTEM</span><span id="clock">--:--:--</span></div>
+<h1>J.A.R.V.I.S.</h1><div class="sub">PROTOCOLO ÔMEGA</div>
+<div class="core"><span>✧</span></div>
+<div class="status">● SISTEMA LOCAL ATIVO<br><small>Painel pronto • sem sensores ou controle remoto</small></div>
+<div class="grid">
+<button class="tile" onclick="ask('Ative o modo Análise Ômega. Seja preciso, avalie riscos e apresente um plano.')"><b>01 / ANÁLISE</b><small>Raciocínio e planejamento</small></button>
+<button class="tile" onclick="ask('Ative o Modo Cientista. Explique com rigor, etapas e exemplos.')"><b>02 / CIÊNCIA</b><small>Explicações técnicas</small></button>
+<button class="tile" onclick="ask('Faça um diagnóstico lógico do problema que vou descrever. Não invente dados.')"><b>03 / DIAGNÓSTICO</b><small>Investigar problemas</small></button>
+<button class="tile" onclick="ask('Ative o Modo Executivo. Seja objetivo e priorize ações práticas.')"><b>04 / EXECUTIVO</b><small>Decisões e tarefas</small></button>
+</div>
+<button class="mainbtn" onclick="openChat()">ABRIR CHATGPT</button>
+<div class="note">Este aplicativo é um painel de acesso. As respostas inteligentes acontecem no ChatGPT e dependem da sua conta e conexão com a internet. Não fica ouvindo em segundo plano nem controla outros aplicativos.</div>
+</main>
+<script>
+function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('pt-BR')}tick();setInterval(tick,1000);
+function openChat(){location.href='https://chatgpt.com/'}
+function ask(prompt){try{navigator.clipboard.writeText(prompt)}catch(e){}; alert('Comando preparado. O ChatGPT será aberto; cole o comando na conversa.');openChat()}
+</script></body></html>

@@ -1,0 +1,20 @@
+J.A.R.V.I.S. OMEGA — pacote Android
+
+O QUE VEM AQUI
+- index.html: painel visual responsivo com relógio e quatro comandos.
+- manifest.webmanifest + sw.js: arquivos para instalação como PWA quando publicado em HTTPS.
+- Os comandos copiam o texto e abrem https://chatgpt.com/; você cola o comando na conversa.
+
+COMO COLOCAR NO CELULAR
+1. Extraia este ZIP.
+2. Publique os quatro arquivos (index.html, manifest.webmanifest, sw.js e este README opcional) em um serviço de hospedagem estática HTTPS, mantendo os arquivos na mesma pasta.
+3. Abra o endereço HTTPS no Chrome do Android.
+4. No menu ⋮ do Chrome, escolha “Instalar app” ou “Adicionar à tela inicial” (o nome pode variar).
+5. Para acesso rápido ao ChatGPT, instale/abra o app oficial ChatGPT e mantenha o ícone na tela inicial ou no dock.
+
+IMPORTANTE
+- Um arquivo HTML aberto diretamente do ZIP não é um PWA instalável confiável. A instalação PWA exige hospedagem HTTPS.
+- Este pacote não se conecta à API do ChatGPT e não precisa de chave/API paga.
+- Não fica ouvindo, não controla outros apps, não lê notificações e não aparece automaticamente dentro de todos os aplicativos.
+- Para usar um comando: toque no cartão, permita copiar se o navegador pedir, abra o ChatGPT e cole na conversa.
+- Não publique dados pessoais no painel. O conteúdo é estático e não envia dados para um servidor próprio.
